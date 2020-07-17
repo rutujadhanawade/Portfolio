@@ -3,12 +3,12 @@
 body {
     padding:0px;
     margin:0px;
-    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLYp9Wa_SGkHOuBkPAyce06nidto-EatWaRw&usqp=CAU") center center;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") center center;
     background-size:cover;
     width:100vw;
     height:100vh;
     overflow:hidden;
-    font-family: 'Josefin Sans', sans-serif;
+     font-family: "Times New Roman", Times, serif;
 }
 #loading {
     width: 100vw;
@@ -79,7 +79,7 @@ body {
     padding-bottom:10vh;
 }
 #middle h1 {
-    color:rgb(255, 50, 50);
+    color: 	rgb(255, 50, 50) ;
     font-size:70px;
     text-decoration:underline;
 }
@@ -92,14 +92,89 @@ body {
     background:transparent;
     color:#fff;
     position:fixed;
-    left:30vh;
+    left:60vh;
     bottom:10vh;
     display:flex;
     flex-direction: column;
     justify-content:center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
+    border-radius:10px 10px 100px 100px;
+}
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: #18d26e;
+  border-radius: 50px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #18d26e;
 }
 #work {
     width:10vw;
@@ -110,7 +185,7 @@ body {
     background:transparent;
     color:#fff;
     position:fixed;
-    right:30vh;
+    right:60vh;
     bottom:10vh;
     display:flex;
     flex-direction: column;
@@ -165,19 +240,21 @@ body {
 }
 .social:hover {
     cursor: pointer;
-    color:rgb(255, 50, 50);
+    color:rgb(255, 70, 70);
 }
 .container {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgb(255, 50, 50);
+    background:transparent;
     color:#fff;
     z-index:9;
     position:fixed;
     max-height:100vh;
     overflow-y:auto;
     display:none;
+    background: rgba(0, 0, 0, 0.9);
+ /* padding: 30px; */
 }
 .container div {
     font-size:25px;
